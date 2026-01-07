@@ -1,0 +1,12 @@
+{
+  "name": "4-number-guessing-game",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "play": "node src/index.js"
+  }
+}
