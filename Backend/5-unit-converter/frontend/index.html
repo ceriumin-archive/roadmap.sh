@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Unit Converter</h1>
+        <div class="unit-selection">
+          <p>Length</p>
+          <p>Weight</p>
+          <p>Temperature</p>
+        </div>
+
+        <form id="unit-converter-form" action="">
+          <div>
+            <label for="value">Enter the length to convert:</label>
+            <input id="value" name="value" required />
+
+            <label for="from-unit">Unit to convert from:</label>
+            <select id="from-unit" name="from-unit" required>
+              <option value="meters">Meters</option>
+              <option value="kilometers">Kilometers</option>
+              <option value="miles">Miles</option>
+              <option value="feet">Feet</option>
+            </select>
+
+            <label for="to-unit">Unit to convert to:</label>
+            <select id="to-unit" name="to-unit" required>
+              <option value="meters">Meters</option>
+              <option value="kilometers">Kilometers</option>
+              <option value="miles">Miles</option>
+              <option value="feet">Feet</option>
+            </select>
+
+            <button type="submit">Convert</button>
+          </div>
+
+          <div>
+            <label for="value">Enter the weight to convert:</label>
+            <input id="value" name="value" required />
+
+            <label for="from-unit">Unit to convert from:</label>
+            <select id="from-unit" name="from-unit" required>
+              <option value="grams">Grams</option>
+              <option value="kilograms">Kilograms</option>
+              <option value="pounds">Pounds</option>
+              <option value="ounces">Ounces</option>
+            </select>
+
+            <label for="to-unit">Unit to convert to:</label>
+            <select id="to-unit" name="to-unit" required>
+              <option value="grams">Grams</option>
+              <option value="kilograms">Kilograms</option>
+              <option value="pounds">Pounds</option>
+              <option value="ounces">Ounces</option>
+            </select>
+
+            <button type="submit">Convert</button>
+          </div>
+
+          <div>
+            <label for="value">Enter the temperature to convert:</label>
+            <input id="value" name="temp-value" required />
+
+            <label for="from-unit">Unit to convert from:</label>
+            <select id="from-unit" name="from-unit" required>
+              <option value="celsius">Celsius</option>
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="kelvin">Kelvin</option>
+            </select>
+
+            <label for="to-unit">Unit to convert to:</label>
+            <select id="to-unit" name="to-unit" required>
+              <option value="celsius">Celsius</option>
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="kelvin">Kelvin</option>
+            </select>
+
+            <button type="submit">Convert</button>
+          </div>
+        </form>
+
+        <div id="result">
+          <p>Result of your calculation</p>
+          <p class="result-content"></p>
+          <button type="reset">Reset</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

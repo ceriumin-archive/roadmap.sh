@@ -1,0 +1,68 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 250px;
+  border: 1px black solid;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.container h1 {
+  text-align: left;
+  font-size: 24px;
+}
+
+.unit-selection {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.unit-selection p {
+  cursor: pointer;
+}
+
+.unit-selection p.active {
+  color: rgb(49, 63, 255);
+  text-decoration: underline;
+}
+
+#unit-converter-form div {
+  flex-direction: column;
+  display: flex;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  width: 100%;
+}
+
+form > * {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+label:not(:first-of-type) {
+  margin-top: 7.5px;
+}
+
+button {
+  margin-top: 5px;
+  padding: 5px;
+}
